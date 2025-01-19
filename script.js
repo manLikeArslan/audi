@@ -22,3 +22,19 @@ const video2 = document.getElementById('myVideo');
 
 // Set the volume to 0.2 (20% of the maximum volume)
 video2.volume = 0.2;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll("[data-animation]").forEach((el) => observer.observe(el));
+});
+

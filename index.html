@@ -9,77 +9,167 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar" data-animation="fade-in-down">
         <p class="siteTitle">Audi RS6</p>
         <ul class="siteList">
             <li class="navlist"><a href="#home" class="navlinks">Home</a></li>
             <li class="navlist"><a href="#gallerysec" class="navlinks">Gallery</a></li>
-            <li class="navlist"><a href="#specs" class="navlinks">Specifications</a></li>
+            <li class="navlist"><a href="#specifications" class="navlinks">Specifications</a></li>
             <li class="navlist"><a href="#contact" class="navlinks">Crash</a></li>
             <li class="navlist"><a href="#about" class="navlinks">About Us</a></li>
         </ul>
     </div>
 
     <!-- Home Section with Video Background -->
-    <div class="home-section" id="home">
+    <div class="home-section" id="home" data-animation="fade-in">
         <video loop autoplay muted class="bgvideo">
             <source src="assets/cinematic.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="home-text">
+        <div class="home-text" data-animation="fade-in-left">
             <h1 class="home-heading">Audi RS6 - The Pinnacle of Performance and Luxury.</h1>
             <p class="home-paragraph">Experience the power and elegance of the Audi RS6.</p>
         </div>
     </div>
 
-    <!-- Other sections -->
-    <h1 id="gallerysec" style="text-align: center; text-decoration: underline; margin-top: 30px;">Gallery of RS6</h1>
-    <div class="section" id="gallery">
+    <!-- Gallery Section -->
+    <h1 id="gallerysec" style="text-align: center; text-decoration: underline; margin-top: 30px;" data-animation="fade-in">Gallery of RS6</h1>
+    <div class="section" id="gallery" data-animation="fade-in">
         <section class="gallery-section">
-            <div class="gallery-item large">
-            <img src="assets/side.jpg" alt="Audi RS6 Front View">
-            <div class="overlay">
-                <h3>Audi RS6 Side View</h3>
-                <p>With its sleek, aerodynamic profile and muscular stance, the RS6 exudes power and precision.</p>
+            <div class="gallery-item large" data-animation="zoom-in">
+                <img src="assets/side.jpg" alt="Audi RS6 Front View">
+                <div class="overlay">
+                    <h3>Audi RS6 Side View</h3>
+                    <p>With its sleek, aerodynamic profile and muscular stance, the RS6 exudes power and precision.</p>
+                </div>
             </div>
+            <div class="gallery-item" data-animation="zoom-in">
+                <img src="assets/front2.jpg" alt="Audi RS6 Engine">
+                <div class="overlay">
+                    <h3>Audi RS6 Front</h3>
+                    <p>The aggressive front grille and sharp LED headlights give the Audi RS6 a commanding presence on the road.</p>
+                </div>
             </div>
-            <div class="gallery-item">
-            <img src="assets/front2.jpg" alt="Audi RS6 Engine">
-            <div class="overlay">
-                <h3>Audi RS6 Front</h3>
-                <p>The aggressive front grille and sharp LED headlights give the Audi RS6 a commanding presence on the road.</p>
-            </div>
-            </div>
-            <div class="gallery-item">
-            <img src="assets/back.jpg" alt="Audi RS6 Interior">
-            <div class="overlay">
-                <h3>Audi RS6 Back</h3>
-                <p>The bold rear with quad exhausts and a wide, sculpted design reinforces the RS6's performance-driven character.</p>
-            </div>
+            <div class="gallery-item" data-animation="zoom-in">
+                <img src="assets/back.jpg" alt="Audi RS6 Interior">
+                <div class="overlay">
+                    <h3>Audi RS6 Back</h3>
+                    <p>The bold rear with quad exhausts and a wide, sculpted design reinforces the RS6's performance-driven character.</p>
+                </div>
             </div>
         </section>
     </div>
-    <div class="section" id="specs">
-        <h2>Specifications</h2>
-        <p>Learn about the technical details of this masterpiece.</p>
+
+    <!-- Specifications Section -->
+    <section id="specifications">
+        <h2 class="section-title" data-animation="fade-in">Specifications</h2>
+        <div class="specs-container">
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Engine</h3>
+                <ul>
+                    <li>Type: 3.0L V6 Turbo</li>
+                    <li>Fuel Type: Petrol</li>
+                    <li>Configuration: Inline</li>
+                </ul>
+            </div>
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Horsepower</h3>
+                <ul>
+                    <li>Max Power: 450 HP @ 6,500 RPM</li>
+                    <li>Max Torque: 500 Nm @ 3,000 RPM</li>
+                </ul>
+            </div>
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Brakes & Suspension</h3>
+                <ul>
+                    <li>Front Brakes: Ventilated Discs</li>
+                    <li>Rear Brakes: Solid Discs</li>
+                    <li>Suspension: Adaptive Air Suspension</li>
+                </ul>
+            </div>
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Speed</h3>
+                <ul>
+                    <li>0-100 km/h: 4.2 seconds</li>
+                    <li>Top Speed: 290 km/h</li>
+                </ul>
+            </div>
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Interior</h3>
+                <ul>
+                    <li>Material: Black Leather</li>
+                    <li>Seats: Sports seats (2-way electric)</li>
+                    <li>Technology: Touchscreen Infotainment</li>
+                </ul>
+            </div>
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Exterior</h3>
+                <ul>
+                    <li>Color: Midnight Black</li>
+                    <li>Wheels: 19-inch Boxster S</li>
+                    <li>Lighting: LED Headlights</li>
+                </ul>
+            </div>
+            <div class="spec-box" data-animation="fade-in-up">
+                <h3>Price Range</h3>
+                <p>€60,000 - €80,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crash Section -->
+    <div class="crash-section" id="contact" data-animation="fade-in">
+        <video loop autoplay muted class="bgvideo" id="myVideo">
+            <source src="assets/crash.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="crash-text">
+            <h1 class="home-heading">The Famous Audi RS6 Crash</h1>
+            <p class="home-paragraph">
+                In 2019, a tragic incident involving an Audi RS6 occurred on the German Autobahn. A 68-year-old driver was traveling at an estimated speed of 300 km/h (186 mph) when he collided with a semi-truck. The impact caused the vehicle to become airborne and wrap around a light pole. The driver was identified, but his body was found mutilated beyond recognition. The German police did not release his name to the press.
+            </p>
+        </div>
     </div>
-    <div class="crash-section" id="contact">
-        <div class="home-section" id="home">
-            <video loop autoplay class="bgvideo" id="myVideo">
-                <source src="assets/crash.mp4" type="video/mp4" >
-                Your browser does not support the video tag.
-            </video>
-            <div class="home-text">
-                <h1 class="home-heading">The Famous Audi RS6 Crash</h1>
-                <p class="home-paragraph">
-                    In 2019, a tragic incident involving an Audi RS6 occurred on the German Autobahn. A 68-year-old driver was traveling at an estimated speed of 300 km/h (186 mph) when he collided with a semi-truck. The impact caused the vehicle to become airborne and wrap around a light pole. The driver was identified, but his body was found mutilated beyond recognition. The German police did not release his name to the press. </p>
+
+    <!-- About Section -->
+    <div class="section" id="about" data-animation="fade-in">
+        <div class="about-container">
+            <h2 class="about-title">Meet the Team</h2>
+            <div class="team-cards">
+                <div class="team-card" data-animation="scale-in">
+                    <img src="assets/men.jpg" alt="Abdul Moiz" class="team-photo">
+                    <h3>Abdul Moiz</h3>
+                    <p>F2024332027</p>
+                </div>
+                <div class="team-card" data-animation="scale-in">
+                    <img src="assets/men.jpg" alt="Ali Hassan Zeeshan" class="team-photo">
+                    <h3>Ali Hassan Zeeshan</h3>
+                    <p>F2024332021</p>
+                </div>
+                <div class="team-card" data-animation="scale-in">
+                    <img src="assets/men.jpg" alt="Aziz Ahmed" class="team-photo">
+                    <h3>Aziz Ahmed</h3>
+                    <p>F2024332026</p>
+                </div>
+                <div class="team-card" data-animation="scale-in">
+                    <img src="assets/men.jpg" alt="Muhammad Arslan Nazir" class="team-photo">
+                    <h3>Muhammad Arslan Nazir</h3>
+                    <p>F2024332048</p>
+                </div>
+                <div class="team-card" data-animation="scale-in">
+                    <img src="assets/women.jpg" alt="Arfa Awais" class="team-photo">
+                    <h3>Arfa Awais</h3>
+                    <p>F2024332011</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptatum ducimus esse enim accusantium exercitationem, minima consequuntur assumenda, fugit tempore obcaecati odit, laboriosam perferendis sit maiores possimus. Nostrum, totam omnis.</p>
-    </div>
+    <footer class="footer" data-animation="fade-in-up">
+        <p class="footer-text">
+            Made with ❤️ by D1 Section of UMT - <span class="highlight">Audi RS6</span> - 2025
+        </p>
+    </footer>
+    
 </body>
 <script src="script.js"></script>
 </html>
