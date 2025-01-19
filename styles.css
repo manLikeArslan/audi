@@ -281,6 +281,8 @@ body {
     margin-bottom: 30px;
     font-weight: bold;
     color: #ffffff;
+    font-family: 'Zen Dots';
+    animation: glow 3s infinite alternate;
   }
   
   .specs-container {
