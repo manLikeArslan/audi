@@ -280,7 +280,7 @@ body {
     font-size: 2rem;
     margin-bottom: 30px;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
     font-family: 'Zen Dots';
     animation: glow 3s infinite alternate;
   }
